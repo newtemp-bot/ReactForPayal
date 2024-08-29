@@ -1,10 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import React, { StrictMode } from "react";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const str = <h1 style={{ backgroundColor: "red" }}>Ashok Prajapati.</h1>;
+const str2 = React.createElement(
+    "h5",
+    { style: { backgroundColor: "blue" } },
+    "Hello"
+);
+
+createRoot(document.getElementById("root")).render(
+    <>
+        {str} {str2}
+        <StrictMode>
+            <App />
+        </StrictMode>
+    </>
+);
