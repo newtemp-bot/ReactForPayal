@@ -11,3 +11,6 @@ How to install react in Windows?
     cd [Your_App_Name]
     npm i
     npm run dev
+
+### Install Tailwind CSS with Vite
+- Link : [Tailwindcss](https://tailwindcss.com/docs/guides/vite)
