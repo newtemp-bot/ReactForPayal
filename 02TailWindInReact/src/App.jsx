@@ -7,6 +7,7 @@ const App = () => {
             <h1 className="text-3xl font-bold underline">Hello world!</h1>
             <CardTwo title="Ashok" desc="Hii this the my description." btnText="Click"/>
             <CardTwo  desc="Hii this the my description." btnText="Click"/>
+            <CardTwo/>
         </div>
     );
 };
