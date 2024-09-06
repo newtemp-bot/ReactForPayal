@@ -1,6 +1,8 @@
 import Footer from "./Footer"
 import Header from "./Header"
-
+const shoots = (v) => {
+  console.log(v);
+}
 const App = () => {
   return (
     <>
@@ -12,6 +14,7 @@ const App = () => {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloribus numquam reiciendis accusantium temporibus, dolorum minus autem ullam voluptas excepturi placeat voluptatem quia eveniet similique amet quas voluptates illo mollitia.
       </p>
       <Footer/>
+      <button onClick={()=>shoots("Goal!")}>OK</button>
     </>
   )
 }
