@@ -1,12 +1,16 @@
+import EventsEx from "./EventsEx";
 import Footer from "./Footer"
 import Header from "./Header"
 const shoots = (v) => {
   console.log(v);
 }
+const onloadEvent = () => {
+  console.log("Onload callled");
+};
 const App = () => {
   return (
     <>
-      <Header/>
+      {/* <Header/>
       <h1>This is the app container {5+5}</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloribus numquam reiciendis accusantium temporibus, dolorum minus autem ullam voluptas excepturi placeat voluptatem quia eveniet similique amet quas voluptates illo mollitia.
@@ -14,7 +18,8 @@ const App = () => {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore doloribus numquam reiciendis accusantium temporibus, dolorum minus autem ullam voluptas excepturi placeat voluptatem quia eveniet similique amet quas voluptates illo mollitia.
       </p>
       <Footer/>
-      <button onClick={()=>shoots("Goal!")}>OK</button>
+      <button onClick={()=>shoots("Goal!")}>OK</button> */}
+      <EventsEx olf={onloadEvent} isvalid={true}/>
     </>
   )
 }
