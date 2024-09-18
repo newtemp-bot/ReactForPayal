@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FetchAPI from "./FetchAPI";
 
 const App = () => {
     const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ const App = () => {
     return (
         <>
             <div>{count}</div>
+            <FetchAPI url="https://hitvaniapp.excellcons.com/datalist"/>
             <button onClick={jadu}>Click</button>
         </>
     );
