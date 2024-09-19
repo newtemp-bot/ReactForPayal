@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FetchAPI from "./FetchAPI";
+import MyForm from "./MyForm";
 
 const App = () => {
     const [count, setCount] = useState(0);
@@ -15,8 +16,9 @@ const App = () => {
     return (
         <>
             <div>{count}</div>
-            <FetchAPI url="https://hitvaniapp.excellcons.com/datalist"/>
+            {/* <FetchAPI url="https://hitvaniapp.excellcons.com/datalist"/> */}
             <button onClick={jadu}>Click</button>
+            <MyForm/>
         </>
     );
 };
