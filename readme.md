@@ -59,3 +59,47 @@
             </div>
         </div>
     </div>
+
+## React Hooks Project Ideas
+#### Only by using this hooks ( useState, useRef, useEffect, useCallback, useContext, useMemo, useLayoutEffect, useReducer )
+
+Here are three projects based on the React hooks you've learned:
+
+### 1. **Task Manager App**
+   - **What you need**: 
+     - Display a list of tasks with functionality to add, edit, and delete tasks.
+     - Implement a filter (e.g., show completed/uncompleted tasks).
+     - Handle local state for individual task updates and use context to share the task list state across components.
+   - **Hooks involved**: 
+     - `useState`, `useContext`, `useReducer`, `useCallback`, `useMemo`
+   - **Hint steps**:
+     1. Create a global state using `useReducer` for managing tasks (add, update, delete).
+     2. Use `useContext` to provide the task state across components (task list, task filter, etc.).
+     3. Use `useMemo` to optimize filtering tasks.
+     4. Use `useCallback` for memoizing add/edit/delete functions.
+
+### 2. **Live Chat Room**
+   - **What you need**: 
+     - Create a chat room where users can send and view messages in real-time.
+     - Automatically scroll to the latest message.
+     - Display the number of online users.
+   - **Hooks involved**:
+     - `useState`, `useEffect`, `useRef`, `useLayoutEffect`, `useCallback`
+   - **Hint steps**:
+     1. Store messages in state using `useState` and handle new messages with `useCallback`.
+     2. Use `useRef` to keep track of the last message and scroll to it when a new message arrives (`useLayoutEffect` to control the scroll).
+     3. Update online users count with `useEffect` on component mount and unmount.
+
+### 3. **E-Commerce Product Listing**
+   - **What you need**: 
+     - Fetch product data from an API.
+     - Display products with sorting (e.g., price, popularity) and filtering (e.g., category).
+     - Implement a loading state and error handling for API requests.
+   - **Hooks involved**:
+     - `useState`, `useEffect`, `useMemo`, `useCallback`
+   - **Hint steps**:
+     1. Use `useEffect` to fetch products and handle API errors.
+     2. Use `useState` to manage loading, error, and product data.
+     3. Use `useMemo` to optimize product sorting and filtering.
+     4. Use `useCallback` for handling filter and sort operations efficiently.
+
