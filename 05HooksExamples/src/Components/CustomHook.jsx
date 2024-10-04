@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import useFetchAPI from "../Hooks/useFetchAPI";
 
-const CustomCompo = () => {
+const CustomHook = () => {
     const [url, setUrl] = useState(null);
     const [keys, setKeys] = useState("");
     let [fetchData] = useFetchAPI(url, keys);
@@ -37,4 +37,4 @@ const CustomCompo = () => {
     );
 };
 
-export default CustomCompo;
+export default CustomHook;
