@@ -6,9 +6,10 @@ import UseRefExample from './UseRefExample.jsx'
 import UseReducerEx from './UseReducerEx.jsx'
 import UseCallBack from './UseCallBack.jsx'
 import UseLayoutEffectExamples from './useLayoutEffectExamples.jsx'
+import CustomCompo from './Components/CustomCompo.jsx'
 
 createRoot(document.getElementById('root')).render(
 
-    <UseLayoutEffectExamples />
+    <CustomCompo />
 
 )
